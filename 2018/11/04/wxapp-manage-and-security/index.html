@@ -81,7 +81,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2018-11-04T02:50:22.000Z" itemprop="datePublished">2018-11-04</time>
-    更新日期:<time datetime="2018-11-04T02:51:32.513Z" itemprop="dateModified">2018-11-04</time>
+    更新日期:<time datetime="2018-11-13T14:50:40.017Z" itemprop="dateModified">2018-11-13</time>
     
   </p>
 </header>
@@ -109,13 +109,13 @@ var _hmt = _hmt || [];
 <p><img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/sandbox.png" alt="image"></p>
 <p>没错，就是沙箱环境。通过提供一个纯 JavaScript 的解释执行环境，这个环境没有浏览器相关接口，当然也不用担心操作 DOM、跳转等问题了。在 iOS 下是用内置的 JavaScriptCore 框架，在安卓下是 JsCore 环境（旧版是腾讯 x5 内核提供，新版是 v8 提供）。</p>
 <p>一起来回顾下小程序的双线程长什么样子：</p>
-<p><img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/1537414306(1" alt="image">.png)</p>
+<p><img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/1537414306%281%29.png" alt="image"></p>
 <p>客户端系统有 JavaScript 的解释引擎，则可以创建一个单独的线程去执行 JavaScript，这个环境下只执行有关小程序业务逻辑的代码。界面渲染相关的任务呢，就丢到 webview 线程里面，通过逻辑层代码去控制渲染哪些界面。</p>
 <p><strong>把开发者的 JS 逻辑代码放到单独的线程去运行，因为不在 Webview 线程里，所以这个环境没有 Webview 任何接口，自然的开发者就没法直接操作 DOM，也就没法动态去更改界面或者抓取页面数据。</strong></p>
 <p>同时小程序不支持动态载入脚本，XSS 漏洞自然也无缝可钻。</p>
 <h2 id="审核机制的管控"><a href="#审核机制的管控" class="headerlink" title="审核机制的管控"></a>审核机制的管控</h2><p>审核机制，故事要从公众号讲起了。</p>
 <h3 id="WebView的飞速发展"><a href="#WebView的飞速发展" class="headerlink" title="WebView的飞速发展"></a>WebView的飞速发展</h3><p>当年随着公众号的出现和繁荣，WebView 的使用频率也越来越高。不少的企业或是小商家、外包公司开始做 H5 页面，各式各样的 H5 活动页、小商城、小测试、小游戏满天飞。</p>
-<p><img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/1537444454(1" alt="image">.jpg)</p>
+<p><img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/1537444454%281%29.jpg" alt="image"></p>
 <p>当微信中的 WebView 逐渐成为移动 Web 的一个重要入口时，微信就有相关的 JS API 了。</p>
 <p>2015年初，微信发布了一整套网页开发工具包，开放了拍摄、录音、语音识别、二维码、地图、支付、分享、卡券等几十个API，称之为 JS-SDK。</p>
 <p>到这个时候，web开发者可以使用到微信的原生能力，去完成一些之前做不到或者很难做到的事情。</p>
