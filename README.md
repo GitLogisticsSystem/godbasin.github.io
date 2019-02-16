@@ -3,6 +3,8 @@
 ---      
 
 ### 最新     
+> [《小程序开发月刊第二期（20190215）》](https://godbasin.github.io/2019/02/15/wxapp-latest-20190215/)   
+> [《小程序开发月刊第一期（20190114）》](https://godbasin.github.io/2019/01/14/wxapp-latest-20190114/)   
 > [《超实用小程序官方能力》](https://godbasin.github.io/2019/01/10/wxapp-official-functions/)   
 > [《如何发布 typescript npm 包》](https://godbasin.github.io/2019/01/05/ts-npm-package/)   
 > [《小程序 gulp 简单构建》](https://godbasin.github.io/2018/12/30/wxapp-gulp/)   
