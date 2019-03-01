@@ -1,6 +1,7 @@
 # [godbasin.github.io](https://godbasin.github.io)   
 被删前端博客   
 ---      
+如果有任何技术内外的疑问，欢迎在[5分钟的帮助](https://github.com/godbasin/5-minutes-help)项目里发起。
 
 ### 最新     
 > [《小程序自定义组件知多少》](https://godbasin.github.io/2019/02/23/wxapp-component/)   
